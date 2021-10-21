@@ -13,12 +13,25 @@ struct PodcastDetailView: View {
     @State var podcast: Podcast
     var body: some View {
         VStack {
-            
-            WebImage(url: podcast.imageOriginalURL)
-                .resizable()
-                .frame(height: 200)
-                .clipped()
-            
+            GeometryReader { geo in
+                ZStack {
+                    WebImage(url: podcast.imageOriginalURL)
+                        .resizable()
+                        .blur(radius: 30)
+                    VStack {
+                        WebImage(url: podcast.imageOriginalURL)
+                            .resizable()
+                            .frame(width: 200, height: 200)
+                            .cornerRadius(20)
+                            .shadow(radius: 10)
+                    }
+                    
+                }
+                .frame(width: geo.size.width, height: geo.size.height)
+                //.background(Color.blue)
+                
+            }
+            .frame(height: 200)
             
             List {
                 ForEach(viewModel.episodes, id:\.episodeID) { episode in
