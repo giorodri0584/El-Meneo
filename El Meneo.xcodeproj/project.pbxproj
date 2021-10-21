@@ -3,27 +3,116 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		770A0075267430740024365C /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A0074267430740024365C /* MainTabBarController.swift */; };
+		7738AB3D26A1058600B378F3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7738AB3C26A1058600B378F3 /* SnapKit */; };
+		773CCE72270E8E1A00B4D2C6 /* RadioShowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773CCE71270E8E1A00B4D2C6 /* RadioShowCell.swift */; };
+		774303B9266C4FB700116B34 /* MoreVideosListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774303B8266C4FB700116B34 /* MoreVideosListController.swift */; };
+		7743A19726A7BC1200BBAF58 /* PlayerDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7743A19626A7BC1200BBAF58 /* PlayerDetailController.swift */; };
+		77443BF8267588F1003D1E19 /* RadioStationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77443BF7267588F1003D1E19 /* RadioStationController.swift */; };
+		77443BFE26758E60003D1E19 /* RadioStationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77443BFD26758E60003D1E19 /* RadioStationCell.swift */; };
+		7744D59526A3A12800159FFE /* StationSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744D59426A3A12800159FFE /* StationSectionHeader.swift */; };
+		7744D59826A3A1D800159FFE /* ApiRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744D59726A3A1D800159FFE /* ApiRequestBuilder.swift */; };
+		7744D59B26A3A52C00159FFE /* StationApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744D59A26A3A52C00159FFE /* StationApiService.swift */; };
+		7744D59E26A3A67A00159FFE /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744D59D26A3A67A00159FFE /* Station.swift */; };
 		7744DA72265DFA7700455692 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744DA71265DFA7700455692 /* AppDelegate.swift */; };
 		7744DA74265DFA7700455692 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744DA73265DFA7700455692 /* SceneDelegate.swift */; };
-		7744DA76265DFA7700455692 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744DA75265DFA7700455692 /* ViewController.swift */; };
+		7744DA76265DFA7700455692 /* VideosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744DA75265DFA7700455692 /* VideosController.swift */; };
 		7744DA79265DFA7700455692 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7744DA77265DFA7700455692 /* Main.storyboard */; };
 		7744DA7B265DFA7800455692 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7744DA7A265DFA7800455692 /* Assets.xcassets */; };
 		7744DA7E265DFA7800455692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7744DA7C265DFA7800455692 /* LaunchScreen.storyboard */; };
+		7744DA8E265DFC0400455692 /* YoutubeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7744DA8D265DFC0400455692 /* YoutubeVideoCell.swift */; };
+		7749DF3926AF837600F8E530 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7749DF3826AF837600F8E530 /* MusicPlayer.swift */; };
+		7749DF4826B0DCF800F8E530 /* LNPopupController in Frameworks */ = {isa = PBXBuildFile; productRef = 7749DF4726B0DCF800F8E530 /* LNPopupController */; };
+		7749DF4926B0DCF800F8E530 /* LNPopupController in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7749DF4726B0DCF800F8E530 /* LNPopupController */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7753F468265F1F380047487C /* YoutubeVideosApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753F467265F1F380047487C /* YoutubeVideosApiService.swift */; };
+		7753F46B265F22CD0047487C /* YoutubeVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7753F46A265F22CD0047487C /* YoutubeVideo.swift */; };
+		7753F46F265F27350047487C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7753F46E265F27350047487C /* SDWebImage */; };
+		77584601271676FB007DDCAF /* VideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77584600271676FB007DDCAF /* VideoCoordinator.swift */; };
+		77587B84272103C10011CCBB /* PodcastDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77587B83272103C10011CCBB /* PodcastDetailViewModel.swift */; };
+		77587B86272104920011CCBB /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77587B85272104920011CCBB /* Episode.swift */; };
+		77595BB426E2DED200C47618 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 77595BB326E2DED200C47618 /* SwiftyBeaver */; };
+		775A2DEA271FAD990039FA74 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A2DE9271FAD990039FA74 /* Podcast.swift */; };
+		775A2DEC271FAF520039FA74 /* SamplePodcasts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A2DEB271FAF520039FA74 /* SamplePodcasts.swift */; };
+		775A2DF1271FBC510039FA74 /* PodcastDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775A2DF0271FBC510039FA74 /* PodcastDetailView.swift */; };
+		775A2DF4271FBE9F0039FA74 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 775A2DF3271FBE9F0039FA74 /* SDWebImageSwiftUI */; };
+		775CD70E2661BD6900120C34 /* VideoDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775CD70D2661BD6900120C34 /* VideoDetailController.swift */; };
+		776242AC2703F12B00D241FB /* AdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776242AB2703F12B00D241FB /* AdManager.swift */; };
+		776242AE27040F3A00D241FB /* SwiftUIControllerPreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776242AD27040F3A00D241FB /* SwiftUIControllerPreviewHelper.swift */; };
+		776242B027040FEE00D241FB /* SwiftUIViewPreviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776242AF27040FEE00D241FB /* SwiftUIViewPreviewHelper.swift */; };
+		776242B32704109200D241FB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776242B22704109200D241FB /* Coordinator.swift */; };
+		776242B62704112900D241FB /* RadioCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776242B52704112900D241FB /* RadioCoordinator.swift */; };
+		7764BA342703E9B000E9F9AA /* SwiftAudioEx in Frameworks */ = {isa = PBXBuildFile; productRef = 7764BA332703E9B000E9F9AA /* SwiftAudioEx */; };
+		7766634E27129E830074E627 /* SampleShowSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766634D27129E830074E627 /* SampleShowSchedule.swift */; };
+		7766D1772717ACE100B05311 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766D1762717ACE100B05311 /* PodcastViewController.swift */; };
+		7766D1792717AD2900B05311 /* PodcastCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766D1782717AD2900B05311 /* PodcastCoordinator.swift */; };
+		776FCE6427114BBF001290A9 /* ShowSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 776FCE6327114BBF001290A9 /* ShowSchedule.swift */; };
+		77FBB62A265E003900314039 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FBB628265E003900314039 /* UIView+Layout.swift */; };
+		77FBB62B265E003900314039 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FBB629265E003900314039 /* VerticalStackView.swift */; };
+		F48144AC3A1D263F66F6AF20 /* Pods_El_Meneo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A17A63B9579E0C9F43E6985 /* Pods_El_Meneo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7749DF4526B0DC6B00F8E530 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7749DF4926B0DCF800F8E530 /* LNPopupController in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3A17A63B9579E0C9F43E6985 /* Pods_El_Meneo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_El_Meneo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE4CB5721157A5E5541C504 /* Pods-El Meneo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Meneo.release.xcconfig"; path = "Target Support Files/Pods-El Meneo/Pods-El Meneo.release.xcconfig"; sourceTree = "<group>"; };
+		770A0074267430740024365C /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		773CCE71270E8E1A00B4D2C6 /* RadioShowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioShowCell.swift; sourceTree = "<group>"; };
+		774303B8266C4FB700116B34 /* MoreVideosListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreVideosListController.swift; sourceTree = "<group>"; };
+		7743A19626A7BC1200BBAF58 /* PlayerDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailController.swift; sourceTree = "<group>"; };
+		77443BF7267588F1003D1E19 /* RadioStationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationController.swift; sourceTree = "<group>"; };
+		77443BFD26758E60003D1E19 /* RadioStationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioStationCell.swift; sourceTree = "<group>"; };
+		7744D59426A3A12800159FFE /* StationSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSectionHeader.swift; sourceTree = "<group>"; };
+		7744D59726A3A1D800159FFE /* ApiRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequestBuilder.swift; sourceTree = "<group>"; };
+		7744D59A26A3A52C00159FFE /* StationApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationApiService.swift; sourceTree = "<group>"; };
+		7744D59D26A3A67A00159FFE /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		7744DA6E265DFA7700455692 /* El Meneo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "El Meneo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7744DA71265DFA7700455692 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7744DA73265DFA7700455692 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7744DA75265DFA7700455692 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7744DA75265DFA7700455692 /* VideosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideosController.swift; sourceTree = "<group>"; };
 		7744DA78265DFA7700455692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7744DA7A265DFA7800455692 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7744DA7D265DFA7800455692 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7744DA7F265DFA7800455692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7744DA8D265DFC0400455692 /* YoutubeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideoCell.swift; sourceTree = "<group>"; };
+		7749DF3826AF837600F8E530 /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		7753F467265F1F380047487C /* YoutubeVideosApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideosApiService.swift; sourceTree = "<group>"; };
+		7753F46A265F22CD0047487C /* YoutubeVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeVideo.swift; sourceTree = "<group>"; };
+		77584600271676FB007DDCAF /* VideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCoordinator.swift; sourceTree = "<group>"; };
+		77587B83272103C10011CCBB /* PodcastDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailViewModel.swift; sourceTree = "<group>"; };
+		77587B85272104920011CCBB /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		775A2DE9271FAD990039FA74 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		775A2DEB271FAF520039FA74 /* SamplePodcasts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePodcasts.swift; sourceTree = "<group>"; };
+		775A2DF0271FBC510039FA74 /* PodcastDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastDetailView.swift; sourceTree = "<group>"; };
+		775CD70D2661BD6900120C34 /* VideoDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoDetailController.swift; sourceTree = "<group>"; };
+		776242AB2703F12B00D241FB /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
+		776242AD27040F3A00D241FB /* SwiftUIControllerPreviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControllerPreviewHelper.swift; sourceTree = "<group>"; };
+		776242AF27040FEE00D241FB /* SwiftUIViewPreviewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIViewPreviewHelper.swift; sourceTree = "<group>"; };
+		776242B22704109200D241FB /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		776242B52704112900D241FB /* RadioCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioCoordinator.swift; sourceTree = "<group>"; };
+		7766634D27129E830074E627 /* SampleShowSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleShowSchedule.swift; sourceTree = "<group>"; };
+		7766D1762717ACE100B05311 /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
+		7766D1782717AD2900B05311 /* PodcastCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoordinator.swift; sourceTree = "<group>"; };
+		776FCE6327114BBF001290A9 /* ShowSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowSchedule.swift; sourceTree = "<group>"; };
+		77FBB628265E003900314039 /* UIView+Layout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		77FBB629265E003900314039 /* VerticalStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
+		C710A53B7FB4194BFD7AFDF6 /* Pods-El Meneo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-El Meneo.debug.xcconfig"; path = "Target Support Files/Pods-El Meneo/Pods-El Meneo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +120,76 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775A2DF4271FBE9F0039FA74 /* SDWebImageSwiftUI in Frameworks */,
+				7764BA342703E9B000E9F9AA /* SwiftAudioEx in Frameworks */,
+				7738AB3D26A1058600B378F3 /* SnapKit in Frameworks */,
+				7753F46F265F27350047487C /* SDWebImage in Frameworks */,
+				77595BB426E2DED200C47618 /* SwiftyBeaver in Frameworks */,
+				F48144AC3A1D263F66F6AF20 /* Pods_El_Meneo.framework in Frameworks */,
+				7749DF4826B0DCF800F8E530 /* LNPopupController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F4027EA979F920797DA51B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A17A63B9579E0C9F43E6985 /* Pods_El_Meneo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		770A0072267430530024365C /* Tabs */ = {
+			isa = PBXGroup;
+			children = (
+				770A0074267430740024365C /* MainTabBarController.swift */,
+			);
+			path = Tabs;
+			sourceTree = "<group>";
+		};
+		773CCE70270E8DF400B4D2C6 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				773CCE71270E8E1A00B4D2C6 /* RadioShowCell.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7743A19026A7ACE700BBAF58 /* PlayerDetail */ = {
+			isa = PBXGroup;
+			children = (
+				7743A19626A7BC1200BBAF58 /* PlayerDetailController.swift */,
+			);
+			path = PlayerDetail;
+			sourceTree = "<group>";
+		};
+		77443BF6267588CA003D1E19 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				773CCE70270E8DF400B4D2C6 /* Component */,
+				77443BF7267588F1003D1E19 /* RadioStationController.swift */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
+		77443BFC26758E4A003D1E19 /* Radio */ = {
+			isa = PBXGroup;
+			children = (
+				77443BFD26758E60003D1E19 /* RadioStationCell.swift */,
+				7744D59426A3A12800159FFE /* StationSectionHeader.swift */,
+			);
+			path = Radio;
+			sourceTree = "<group>";
+		};
 		7744DA65265DFA7700455692 = {
 			isa = PBXGroup;
 			children = (
 				7744DA70265DFA7700455692 /* El Meneo */,
 				7744DA6F265DFA7700455692 /* Products */,
+				B6BF5503FC78D651D938DE94 /* Pods */,
+				2F4027EA979F920797DA51B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +204,166 @@
 		7744DA70265DFA7700455692 /* El Meneo */ = {
 			isa = PBXGroup;
 			children = (
-				7744DA71265DFA7700455692 /* AppDelegate.swift */,
-				7744DA73265DFA7700455692 /* SceneDelegate.swift */,
-				7744DA75265DFA7700455692 /* ViewController.swift */,
-				7744DA77265DFA7700455692 /* Main.storyboard */,
+				7766634C27129E650074E627 /* SampleData */,
+				776242B12704108100D241FB /* Coordinator */,
+				7764BA352703F0CC00E9F9AA /* AdMob */,
+				7749DF3726AF835C00F8E530 /* PlayerUtils */,
+				77FBB627265DFFF800314039 /* Helpers */,
+				7744DA8B265DFB6200455692 /* Resouces */,
+				7744DA8A265DFB5800455692 /* Services */,
+				7744DA89265DFB5100455692 /* Models */,
+				7744DA88265DFB4B00455692 /* Views */,
+				7744DA87265DFB4100455692 /* Controllers */,
 				7744DA7A265DFA7800455692 /* Assets.xcassets */,
-				7744DA7C265DFA7800455692 /* LaunchScreen.storyboard */,
 				7744DA7F265DFA7800455692 /* Info.plist */,
 			);
 			path = "El Meneo";
+			sourceTree = "<group>";
+		};
+		7744DA87265DFB4100455692 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				775A2DED271FBBE20039FA74 /* PodcastDetail */,
+				7766D1752717AB9E00B05311 /* Podcast */,
+				7758460227167B05007DDCAF /* Videos */,
+				7743A19026A7ACE700BBAF58 /* PlayerDetail */,
+				77443BF6267588CA003D1E19 /* Radio */,
+				770A0072267430530024365C /* Tabs */,
+				775CD70C2661BD2A00120C34 /* VideoDetail */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7744DA88265DFB4B00455692 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77443BFC26758E4A003D1E19 /* Radio */,
+				7744DA8D265DFC0400455692 /* YoutubeVideoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7744DA89265DFB5100455692 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7753F46A265F22CD0047487C /* YoutubeVideo.swift */,
+				7744D59D26A3A67A00159FFE /* Station.swift */,
+				776FCE6327114BBF001290A9 /* ShowSchedule.swift */,
+				775A2DE9271FAD990039FA74 /* Podcast.swift */,
+				77587B85272104920011CCBB /* Episode.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7744DA8A265DFB5800455692 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7753F467265F1F380047487C /* YoutubeVideosApiService.swift */,
+				7744D59726A3A1D800159FFE /* ApiRequestBuilder.swift */,
+				7744D59A26A3A52C00159FFE /* StationApiService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7744DA8B265DFB6200455692 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				7744DA73265DFA7700455692 /* SceneDelegate.swift */,
+				7744DA77265DFA7700455692 /* Main.storyboard */,
+				7744DA71265DFA7700455692 /* AppDelegate.swift */,
+				7744DA7C265DFA7800455692 /* LaunchScreen.storyboard */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		7749DF3726AF835C00F8E530 /* PlayerUtils */ = {
+			isa = PBXGroup;
+			children = (
+				7749DF3826AF837600F8E530 /* MusicPlayer.swift */,
+			);
+			path = PlayerUtils;
+			sourceTree = "<group>";
+		};
+		7758460227167B05007DDCAF /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				7744DA75265DFA7700455692 /* VideosController.swift */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
+		775A2DED271FBBE20039FA74 /* PodcastDetail */ = {
+			isa = PBXGroup;
+			children = (
+				775A2DF0271FBC510039FA74 /* PodcastDetailView.swift */,
+				77587B83272103C10011CCBB /* PodcastDetailViewModel.swift */,
+			);
+			path = PodcastDetail;
+			sourceTree = "<group>";
+		};
+		775CD70C2661BD2A00120C34 /* VideoDetail */ = {
+			isa = PBXGroup;
+			children = (
+				775CD70D2661BD6900120C34 /* VideoDetailController.swift */,
+				774303B8266C4FB700116B34 /* MoreVideosListController.swift */,
+			);
+			path = VideoDetail;
+			sourceTree = "<group>";
+		};
+		776242B12704108100D241FB /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				776242B22704109200D241FB /* Coordinator.swift */,
+				776242B52704112900D241FB /* RadioCoordinator.swift */,
+				77584600271676FB007DDCAF /* VideoCoordinator.swift */,
+				7766D1782717AD2900B05311 /* PodcastCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7764BA352703F0CC00E9F9AA /* AdMob */ = {
+			isa = PBXGroup;
+			children = (
+				776242AB2703F12B00D241FB /* AdManager.swift */,
+			);
+			path = AdMob;
+			sourceTree = "<group>";
+		};
+		7766634C27129E650074E627 /* SampleData */ = {
+			isa = PBXGroup;
+			children = (
+				7766634D27129E830074E627 /* SampleShowSchedule.swift */,
+				775A2DEB271FAF520039FA74 /* SamplePodcasts.swift */,
+			);
+			path = SampleData;
+			sourceTree = "<group>";
+		};
+		7766D1752717AB9E00B05311 /* Podcast */ = {
+			isa = PBXGroup;
+			children = (
+				7766D1762717ACE100B05311 /* PodcastViewController.swift */,
+			);
+			path = Podcast;
+			sourceTree = "<group>";
+		};
+		77FBB627265DFFF800314039 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				77FBB628265E003900314039 /* UIView+Layout.swift */,
+				77FBB629265E003900314039 /* VerticalStackView.swift */,
+				776242AD27040F3A00D241FB /* SwiftUIControllerPreviewHelper.swift */,
+				776242AF27040FEE00D241FB /* SwiftUIViewPreviewHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B6BF5503FC78D651D938DE94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C710A53B7FB4194BFD7AFDF6 /* Pods-El Meneo.debug.xcconfig */,
+				3EE4CB5721157A5E5541C504 /* Pods-El Meneo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +373,26 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7744DA82265DFA7800455692 /* Build configuration list for PBXNativeTarget "El Meneo" */;
 			buildPhases = (
+				78263F4837BC14DA9274EE2B /* [CP] Check Pods Manifest.lock */,
 				7744DA6A265DFA7700455692 /* Sources */,
 				7744DA6B265DFA7700455692 /* Frameworks */,
 				7744DA6C265DFA7700455692 /* Resources */,
+				7749DF4526B0DC6B00F8E530 /* Embed Frameworks */,
+				890958BC1AF4E3B2F348ED7A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "El Meneo";
+			packageProductDependencies = (
+				7753F46E265F27350047487C /* SDWebImage */,
+				7738AB3C26A1058600B378F3 /* SnapKit */,
+				7749DF4726B0DCF800F8E530 /* LNPopupController */,
+				77595BB326E2DED200C47618 /* SwiftyBeaver */,
+				7764BA332703E9B000E9F9AA /* SwiftAudioEx */,
+				775A2DF3271FBE9F0039FA74 /* SDWebImageSwiftUI */,
+			);
 			productName = "El Meneo";
 			productReference = 7744DA6E265DFA7700455692 /* El Meneo.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +420,14 @@
 				Base,
 			);
 			mainGroup = 7744DA65265DFA7700455692;
+			packageReferences = (
+				7753F46D265F27350047487C /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				7738AB3B26A1058600B378F3 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				7749DF4626B0DCF800F8E530 /* XCRemoteSwiftPackageReference "LNPopupController" */,
+				77595BB226E2DED200C47618 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				7764BA322703E9B000E9F9AA /* XCRemoteSwiftPackageReference "SwiftAudio" */,
+				775A2DF2271FBE9F0039FA74 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 7744DA6F265DFA7700455692 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -132,14 +450,88 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78263F4837BC14DA9274EE2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-El Meneo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		890958BC1AF4E3B2F348ED7A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-El Meneo/Pods-El Meneo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-El Meneo/Pods-El Meneo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-El Meneo/Pods-El Meneo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7744DA6A265DFA7700455692 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7744DA76265DFA7700455692 /* ViewController.swift in Sources */,
+				77443BFE26758E60003D1E19 /* RadioStationCell.swift in Sources */,
+				776242B62704112900D241FB /* RadioCoordinator.swift in Sources */,
+				774303B9266C4FB700116B34 /* MoreVideosListController.swift in Sources */,
+				7744DA76265DFA7700455692 /* VideosController.swift in Sources */,
+				7744D59826A3A1D800159FFE /* ApiRequestBuilder.swift in Sources */,
+				770A0075267430740024365C /* MainTabBarController.swift in Sources */,
+				7753F46B265F22CD0047487C /* YoutubeVideo.swift in Sources */,
+				776242AC2703F12B00D241FB /* AdManager.swift in Sources */,
+				776242B027040FEE00D241FB /* SwiftUIViewPreviewHelper.swift in Sources */,
+				77FBB62B265E003900314039 /* VerticalStackView.swift in Sources */,
+				775A2DF1271FBC510039FA74 /* PodcastDetailView.swift in Sources */,
+				7744DA8E265DFC0400455692 /* YoutubeVideoCell.swift in Sources */,
+				77443BF8267588F1003D1E19 /* RadioStationController.swift in Sources */,
+				7753F468265F1F380047487C /* YoutubeVideosApiService.swift in Sources */,
+				776FCE6427114BBF001290A9 /* ShowSchedule.swift in Sources */,
+				7744D59526A3A12800159FFE /* StationSectionHeader.swift in Sources */,
 				7744DA72265DFA7700455692 /* AppDelegate.swift in Sources */,
+				775CD70E2661BD6900120C34 /* VideoDetailController.swift in Sources */,
+				7766634E27129E830074E627 /* SampleShowSchedule.swift in Sources */,
+				775A2DEC271FAF520039FA74 /* SamplePodcasts.swift in Sources */,
 				7744DA74265DFA7700455692 /* SceneDelegate.swift in Sources */,
+				775A2DEA271FAD990039FA74 /* Podcast.swift in Sources */,
+				77FBB62A265E003900314039 /* UIView+Layout.swift in Sources */,
+				77587B86272104920011CCBB /* Episode.swift in Sources */,
+				77584601271676FB007DDCAF /* VideoCoordinator.swift in Sources */,
+				776242B32704109200D241FB /* Coordinator.swift in Sources */,
+				7749DF3926AF837600F8E530 /* MusicPlayer.swift in Sources */,
+				7766D1792717AD2900B05311 /* PodcastCoordinator.swift in Sources */,
+				7744D59E26A3A67A00159FFE /* Station.swift in Sources */,
+				77587B84272103C10011CCBB /* PodcastDetailViewModel.swift in Sources */,
+				7766D1772717ACE100B05311 /* PodcastViewController.swift in Sources */,
+				7744D59B26A3A52C00159FFE /* StationApiService.swift in Sources */,
+				7743A19726A7BC1200BBAF58 /* PlayerDetailController.swift in Sources */,
+				773CCE72270E8E1A00B4D2C6 /* RadioShowCell.swift in Sources */,
+				776242AE27040F3A00D241FB /* SwiftUIControllerPreviewHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +675,15 @@
 		};
 		7744DA83265DFA7800455692 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C710A53B7FB4194BFD7AFDF6 /* Pods-El Meneo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 268P6Q92XD;
 				INFOPLIST_FILE = "El Meneo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,26 +691,29 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rodriguez.giomar.El-Meneo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		7744DA84265DFA7800455692 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EE4CB5721157A5E5541C504 /* Pods-El Meneo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = 268P6Q92XD;
 				INFOPLIST_FILE = "El Meneo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rodriguez.giomar.El-Meneo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodriguez.giomar.elMeneo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -341,6 +739,90 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7738AB3B26A1058600B378F3 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		7749DF4626B0DCF800F8E530 /* XCRemoteSwiftPackageReference "LNPopupController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LeoNatan/LNPopupController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.11.6;
+			};
+		};
+		7753F46D265F27350047487C /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.11.1;
+			};
+		};
+		77595BB226E2DED200C47618 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.5;
+			};
+		};
+		775A2DF2271FBE9F0039FA74 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		7764BA322703E9B000E9F9AA /* XCRemoteSwiftPackageReference "SwiftAudio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DoubleSymmetry/SwiftAudio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7738AB3C26A1058600B378F3 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7738AB3B26A1058600B378F3 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		7749DF4726B0DCF800F8E530 /* LNPopupController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7749DF4626B0DCF800F8E530 /* XCRemoteSwiftPackageReference "LNPopupController" */;
+			productName = LNPopupController;
+		};
+		7753F46E265F27350047487C /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7753F46D265F27350047487C /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		77595BB326E2DED200C47618 /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 77595BB226E2DED200C47618 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		775A2DF3271FBE9F0039FA74 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 775A2DF2271FBE9F0039FA74 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		7764BA332703E9B000E9F9AA /* SwiftAudioEx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7764BA322703E9B000E9F9AA /* XCRemoteSwiftPackageReference "SwiftAudio" */;
+			productName = SwiftAudioEx;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 7744DA66265DFA7700455692 /* Project object */;
 }
